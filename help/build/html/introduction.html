@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introduction &mdash; quickprint 0.2 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="quickprint 0.2 documentation" href="index.html" />
+    <link rel="prev" title="Welcome to the PDOK BAG WFS Connector plugin documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to the PDOK BAG WFS Connector plugin documentation"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">quickprint 0.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="about">
+<h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
+<p>This plug-in is developed by Marco Duiker from <a class="reference external" href="http://www.md-kwadraat.nl/">MD-kwadraat</a> .</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>The PDOK BAG WFS service has a limitation of 1000 features per request. QGIS can use WFS2 response paging to fill your map with features even if more than 1000 features are required to fill your map extent. But … as soon as you try to see the attribute table of the layer or if you try to save the layer as a vector file, QGIS tries to download the entire BAG.</p>
+<p>This plugin works around this issue by using the excellent WFS support of OGR.</p>
+</div>
+<div class="section" id="basic-usage">
+<h2>Basic usage<a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a></h2>
+<p>Zoom the map to your area of interest.</p>
+<p>Open the dialog via the menu (Web) or the BAG icon. Select a layer and save the connection in a convenient place.</p>
+<p>A layer will be added to the map, and the download of the features will start. Beware that this can take a long time if you have selected a large area. As there is no progress info you&#8217;ll just have to wait.</p>
+</div>
+<div class="section" id="adapting-the-plugin-to-other-services">
+<h2>Adapting the plugin to other services<a class="headerlink" href="#adapting-the-plugin-to-other-services" title="Permalink to this headline">¶</a></h2>
+<p>In the plugin folder you&#8217;ll find a url.txt containing the url of the service the plugin is connecting to. You can change this url to any url of a WFS service you like, as long as you adapt the layers.txt as well, so that it reflects the avaiable typename (layers) in the service.</p>
+</div>
+<div class="section" id="further-development">
+<h2>Further development<a class="headerlink" href="#further-development" title="Permalink to this headline">¶</a></h2>
+<p>This plugin is more a demonstrator than a fully finished product. Error checking, progress info, and respecting a network proxy are vital to add. Finding some way to cache would be the icing on the cake.</p>
+<p>Please feel free to fork on GitHub and add your improvements.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#about">About</a></li>
+<li><a class="reference internal" href="#background">Background</a></li>
+<li><a class="reference internal" href="#basic-usage">Basic usage</a></li>
+<li><a class="reference internal" href="#adapting-the-plugin-to-other-services">Adapting the plugin to other services</a></li>
+<li><a class="reference internal" href="#further-development">Further development</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to the PDOK BAG WFS Connector plugin documentation</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/introduction.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to the PDOK BAG WFS Connector plugin documentation"
+             >previous</a> |</li>
+        <li><a href="index.html">quickprint 0.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2017, Marco Duiker (MD-kwadraat).
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

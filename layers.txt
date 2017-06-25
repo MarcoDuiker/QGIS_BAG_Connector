@@ -1,0 +1,5 @@
+bag:ligplaats
+bag:pand
+bag:standplaats
+bag:verblijfsobject (Point)
+bag:woonplaats
